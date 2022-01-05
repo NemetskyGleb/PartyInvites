@@ -3,9 +3,11 @@ namespace PartInvites.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "Hello World!";
+            int hour = DateTime.Now.Hour;
+            ViewBag.Greeting = hour < 12 ? "Good Morning" : "Good Afternoon";
+            return View("MyView");
         }
     }
 }
