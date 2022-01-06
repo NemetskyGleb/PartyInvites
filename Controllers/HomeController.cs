@@ -21,7 +21,7 @@ namespace PartInvites.Controllers
         [HttpPost]
         public ViewResult RsvpForm(GuestResponse guestResponse)
         {
-            // TO DO: Save data from guestResponse
+            // TO DO: Save data from guestResponsew
             return View();
         }
     }
