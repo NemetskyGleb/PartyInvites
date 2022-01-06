@@ -15,6 +15,9 @@
     <div>
         @ViewBag.Greeting World (from the view)
         <p>We're going to have an exciting party.</p>
+        <a asp-action="RsvpForm">RSVP NOW</a>
+        @* Атрибут asp-action - это инструкция по добавлению к элементу а атрибута href,
+        содержащего URL для метода действия. *@
     </div>
 </body>
 </html>
