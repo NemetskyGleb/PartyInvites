@@ -10,16 +10,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanks</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-    <p>
-        <h1>Thank you, @Model.Name!</h1>
-        @if (Model.WillAttend == true) {
-            @:It's great that you're coming. The drinks are in the fridge!
-        } else {
-            @:Sorry to hear that you can't make it, but thanks for letting us know.
-        }
-    </p>
-    <p>Click <a asp-action="ListResponses">here</a> to see who is coming.</p>
+    <div class="container">
+        <div class="text-center">
+            <p>
+                <h1>Thank you, @Model.Name!</h1>
+                @if (Model.WillAttend == true) {
+                    @:It's great that you're coming. The drinks are in the fridge!
+                } else {
+                    @:Sorry to hear that you can't make it, but thanks for letting us know.
+                }
+            </p>
+            Click <a style="display: inline; padding: 0;" class="nav-link" asp-action="ListResponses">here</a> to see who is coming.
+        </div>
+    </div>
 </body>
 </html>

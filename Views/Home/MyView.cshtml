@@ -9,13 +9,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
     <title>Index</title>
 </head>
 <body>
-    <div>
-        @ViewBag.Greeting World (from the view)
-        <p>We're going to have an exciting party.</p>
-        <a asp-action="RsvpForm">RSVP NOW</a>
+    <div class="text-center">
+        <h3>We're going to have an exciting party.</h3>
+        <h4>And you're invited!</h4>
+        <a class="btn btn-primary" asp-action="RsvpForm">RSVP NOW</a>
         @* Атрибут asp-action - это инструкция по добавлению к элементу а атрибута href,
         содержащего URL для метода действия. *@
     </div>
